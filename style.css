@@ -3,10 +3,22 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 1000px;
-  gap: 1px;
+  width: 528px;
+  height: 100vh;
 }
 
-.row {
-  display: flex;
+.last {
+  border-right: 1px black solid;
+}
+
+.column {
+  background-color: aqua;
+  min-width: 32px;
+  min-height: 32px;
+  border-top: 1px black solid;
+  border-left: 1px black solid;
+}
+
+.column:hover {
+  background-color: red;
 }

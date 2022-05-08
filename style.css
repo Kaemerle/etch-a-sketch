@@ -1,33 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  background-color: grey;
-  text-align: center;
+  height: 100%;
+  margin: 0;
+  background-color: lightgrey;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 
-#container {
-  display: grid;
+#content-wrapper {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  grid-template-columns: 200px 1000px;
-  grid-template-rows: 800px;
+  align-items: center;
 }
 
-.header {
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 50px;
+#title-container {
+  display: flex;
+  margin-bottom: 25px;
 }
 
-.sidebar {
-  border: black solid 1px;
-  background-color: aqua;
+#body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  border: 8px solid rgb(5, 5, 50);
+  border-radius: 5px;
 }
 
-.box {
-  border: black solid 1px;
-  background-color: aqua;
+#controls-container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
 }
 
-.grid {
-  margin: 10px;
-  padding: 10px;
-  border: black solid 1px;
+#grid-container {
+  display: flex;
 }

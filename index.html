@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-A-Sketch</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body> 
-    <div class="divContainer">
-
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="header">Etch-A-Sketch!</div>
+      <div class="content-box">
+        <div class="controls">
+          <div class="grid-size">
+            <button class="btn" id="smllGrid">16x16</button>
+            <button class="btn" id="medGrid">32x32</button>
+            <button class="btn" id="lrgGrid">64x64</button>
+          </div>
+          <button class="btn" id="resetBtn">Reset</button>
+        </div>
+        <div class="divContainer"></div>
+      </div>
     </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
